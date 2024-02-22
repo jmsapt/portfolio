@@ -1,0 +1,382 @@
+[
+    {
+        "course": "ENGG1000",
+        "name": "Engineering Design",
+        "mark": 84,
+        "grade": "DN",
+        "taken": {
+            "year": 2020,
+            "term": 1
+        }
+    },
+    {
+        "course": "MATH1131",
+        "name": "Mathematics 1A",
+        "mark": -1,
+        "grade": "SY",
+        "taken": {
+            "year": 2020,
+            "term": 1
+        }
+    },
+    {
+        "course": "PHYS1121",
+        "name": "Physics 1A",
+        "mark": -1,
+        "grade": "SY",
+        "taken": {
+            "year": 2020,
+            "term": 1
+        }
+    },
+    {
+        "course": "ENGG1300",
+        "name": "Engineering Mechanics",
+        "mark": 88,
+        "grade": "HD",
+        "taken": {
+            "year": 2020,
+            "term": 2
+        }
+    },
+    {
+        "course": "ENGG1400",
+        "name": "Engineering Infrastructure Systems",
+        "mark": 83,
+        "grade": "DN",
+        "taken": {
+            "year": 2020,
+            "term": 2
+        }
+    },
+    {
+        "course": "MATH1231",
+        "name": "Math 1B",
+        "mark": 76,
+        "grade": "DN",
+        "taken": {
+            "year": 2020,
+            "term": 2
+        }
+    },
+    {
+        "course": "CVEN2101",
+        "name": "Engineering Construction",
+        "mark": 83,
+        "grade": "DN",
+        "taken": {
+            "year": 2020,
+            "term": 3
+        }
+    },
+    {
+        "course": "ENGG1811",
+        "name": "Computing for Engineers",
+        "mark": 98,
+        "grade": "HD",
+        "taken": {
+            "year": 2020,
+            "term": 3
+        }
+    },
+    {
+        "course": "MATS1101",
+        "name": "Engineering Materials and Chemistry",
+        "mark": 90,
+        "grade": "HD",
+        "taken": {
+            "year": 2020,
+            "term": 3
+        }
+    },
+    {
+        "course": "ENGG2400",
+        "name": "Fluid Mechanics for Engineers",
+        "mark": 83,
+        "grade": "DN",
+        "taken": {
+            "year": 2021,
+            "term": 1
+        }
+    },
+    {
+        "course": "ENGG2500",
+        "name": "Mechanics of Solids",
+        "mark": 80,
+        "grade": "DN",
+        "taken": {
+            "year": 2021,
+            "term": 1
+        }
+    },
+    {
+        "course": "MATH2018",
+        "name": "Engineering Mathematics 2D",
+        "mark": 91,
+        "grade": "HD",
+        "taken": {
+            "year": 2021,
+            "term": 1
+        }
+    },
+    {
+        "course": "Engineering Computations",
+        "name": "2nd Year Term 2",
+        "mark": 82,
+        "grade": "DN",
+        "taken": {
+            "year": 2021,
+            "term": 2
+        }
+    },
+    {
+        "course": "CVEN2303",
+        "name": "Structural Analysis and Modelling",
+        "mark": 75,
+        "grade": "DN",
+        "taken": {
+            "year": 2021,
+            "term": 2
+        }
+    },
+    {
+        "course": "DESN2000",
+        "name": "Engineering Design 2",
+        "mark": 84,
+        "grade": "DN",
+        "taken": {
+            "year": 2021,
+            "term": 2
+        }
+    },
+    {
+        "course": "CVEN3101",
+        "name": "Engineering Operations",
+        "mark": 84,
+        "grade": "DN",
+        "taken": {
+            "year": 2021,
+            "term": 3
+        }
+    },
+    {
+        "course": "CVEN3202",
+        "name": "Soil Mechanics",
+        "mark": 90,
+        "grade": "HD",
+        "taken": {
+            "year": 2021,
+            "term": 3
+        }
+    },
+    {
+        "course": "ECON1101",
+        "name": "Microeconomics 1",
+        "mark": 83,
+        "grade": "DN",
+        "taken": {
+            "year": 2021,
+            "term": 3
+        }
+    },
+    {
+        "course": "MMAN3110",
+        "name": "Mechanical Design 1",
+        "mark": 77,
+        "grade": "DN",
+        "taken": {
+            "year": 2022,
+            "term": 1
+        }
+    },
+    {
+        "course": "MMAN2700",
+        "name": "Thermodynamics",
+        "mark": 71,
+        "grade": "CR",
+        "taken": {
+            "year": 2022,
+            "term": 1
+        }
+    },
+    {
+        "course": "MMAN3400",
+        "name": "Mechanics of Solids 2",
+        "mark": 86,
+        "grade": "HD",
+        "taken": {
+            "year": 2022,
+            "term": 1
+        }
+    },
+    {
+        "course": "COMP1511",
+        "name": "Programming Fundamentals",
+        "mark": 92,
+        "grade": "HD",
+        "taken": {
+            "year": 2022,
+            "term": 2
+        }
+    },
+    {
+        "course": "MMAN2300",
+        "name": "Engineering Mechanics 2",
+        "mark": 81,
+        "grade": "DN",
+        "taken": {
+            "year": 2022,
+            "term": 2
+        }
+    },
+    {
+        "course": "DESN3000",
+        "name": "Strategic Design Innovation",
+        "mark": 77,
+        "grade": "DN",
+        "taken": {
+            "year": 2022,
+            "term": 2
+        }
+    },
+    {
+        "course": "MMAN1130",
+        "name": "Design and Manufacturing",
+        "mark": 93,
+        "grade": "HD",
+        "taken": {
+            "year": 2022,
+            "term": 2
+        }
+    },
+    {
+        "course": "COMP1521",
+        "name": "Computer Systems Fundamentals",
+        "mark": 88,
+        "grade": "HD",
+        "taken": {
+            "year": 2022,
+            "term": 3
+        }
+    },
+    {
+        "course": "ELEC1111",
+        "name": "Electrical Circuit Fundamentals",
+        "mark": 79,
+        "grade": "DN",
+        "taken": {
+            "year": 2022,
+            "term": 3
+        }
+    },
+    {
+        "course": "COMP2521",
+        "name": "Data Structures and Algorithms",
+        "mark": 81,
+        "grade": "DN",
+        "taken": {
+            "year": 2022,
+            "term": 3
+        }
+    },
+    {
+        "course": "COMP1531",
+        "name": "Software Engineering Fundamentals",
+        "mark": 96,
+        "grade": "HD",
+        "taken": {
+            "year": 2023,
+            "term": 1
+        }
+    },
+    {
+        "course": "COMP3121",
+        "name": "Algorithms and Programming Techiques",
+        "mark": 91,
+        "grade": "HD",
+        "taken": {
+            "year": 2023,
+            "term": 1
+        }
+    },
+    {
+        "course": "MMAN3200",
+        "name": "Linear Systems and Control",
+        "mark": 80,
+        "grade": "DN",
+        "taken": {
+            "year": 2023,
+            "term": 1
+        }
+    },
+    {
+        "course": "MECH3610",
+        "name": "Advanced Thermofluids",
+        "mark": 77,
+        "grade": "DN",
+        "taken": {
+            "year": 2023,
+            "term": 2
+        }
+    },
+    {
+        "course": "MECH4100",
+        "name": "Mechanical Design 2",
+        "mark": 97,
+        "grade": "HD",
+        "taken": {
+            "year": 2023,
+            "term": 2
+        }
+    },
+    {
+        "course": "COMP2511",
+        "name": "Object-Oriented Design and Programming",
+        "mark": 83,
+        "grade": "DN",
+        "taken": {
+            "year": 2023,
+            "term": 2
+        }
+    },
+    {
+        "course": "ENGG3600",
+        "name": "Engineering VIP",
+        "mark": 92,
+        "grade": "HD",
+        "taken": {
+            "year": 2023,
+            "term": 2
+        }
+    },
+    {
+        "course": "COMP3900",
+        "name": "Computer Science Project",
+        "mark": 93,
+        "grade": "HD",
+        "taken": {
+            "year": 2023,
+            "term": 3
+        }
+    },
+    {
+        "course": "AREO9500",
+        "name": "Satellite Systems",
+        "mark": 81,
+        "grade": "DN",
+        "taken": {
+            "year": 2023,
+            "term": 3
+        }
+    },
+    {
+        "course": "COMP6991",
+        "name": "Solving Modern Programming Problems with Rust",
+        "mark": 94,
+        "grade": "HD",
+        "taken": {
+            "year": 2023,
+            "term": 3
+        }
+    }
+]
