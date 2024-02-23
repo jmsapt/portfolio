@@ -2,7 +2,6 @@
     // tailwind
     import "tailwindcss/tailwind.css";
     const alignment = "w-full flex items-center justify-center";
-
     // page components
     import Navbar from "./Navbar.svelte";
     import Footer from "./Footer.svelte";
