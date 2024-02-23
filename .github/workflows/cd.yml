@@ -6,7 +6,7 @@ on:
       - master  # You can change this to the branch you want to deploy from
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -54,7 +54,6 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
         with:
-          lfs: true
           token: ${{ secrets.TOKEN }}
   
       - name: Deploy to GitHub Pages
@@ -62,5 +61,4 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
             artifact_name: svelte-app
-            lfs: true
             token: ${{ secrets.TOKEN }}
