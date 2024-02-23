@@ -10,7 +10,7 @@
             <!-- <li><a href="/blog">Blog</a></li> -->
         </ul>
         <div >
-            <a href="/blog" class="btn bg-base-100 btn-ghost">Blog</a>
+            <a href="/" class="btn bg-base-100 btn-ghost">Blog</a>
         </div>
     </div>
 </div>
