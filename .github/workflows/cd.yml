@@ -3,8 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main # Adjust this to your main branch
-
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
