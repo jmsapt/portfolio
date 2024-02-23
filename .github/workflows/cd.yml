@@ -1,8 +1,5 @@
 name: Deploy GitHub Pages
 
-env:
-  BUILD_PATH: ./dist
-
 on:
   push:
     branches: [master] # Assuming your main branch is named 'main'
@@ -35,7 +32,7 @@ jobs:
         run: npm run build
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v1
         with:
           name: github-pages
           path: ./.svelte-kit/output/client/
