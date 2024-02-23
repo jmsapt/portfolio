@@ -96,8 +96,8 @@
         "taken": {"year": 2021, "term": 1}
     },
     {
-        "course": "Engineering Computations",
-        "name": "2nd Year Term 2",
+        "course": "CVEN2002",
+        "name": "Engineering Computations",
         "mark": 82,
         "grade": "DN",
         "uoc": 6,

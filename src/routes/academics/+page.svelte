@@ -1,55 +1,29 @@
 <script>
-    import { onMount } from 'svelte';
-    import Chart from 'chart.js/auto';
-
-    /**
-     * @type {HTMLCanvasElement}
-     */
-    let portfolio;
-    const data = {
-          labels: ['Expenses', 'Savings', 'Investments'],
-          datasets: [
-              {
-                  label: 'My First Dataset',
-                  data: [300, 50, 100],
-                  backgroundColor: ['#7000e1', '#fc8800', '#00b0e8'],
-                  // hoverOffset: 4,
-                  borderWidth: 0
-              }
-          ]
-      };
-      const config = {
-          type: 'doughnut',
-          data: data,
-          options: {
-              borderRadius: '30',
-              responsive: true,
-              cutout: '95%',
-              spacing: 2,
-              plugins: {
-                  legend: {
-                      position: 'bottom',
-                      display: true,
-                      labels: {
-                          usePointStyle: true,
-                          padding: 20,
-                          font: {
-                              size: 14
-                          }
-                      }
-                  },
-                  title: {
-                      display: true,
-                      text: 'My Personal Portfolio'
-                  }
-              }
-          }
-      };
-    onMount(()=> {
-      const ctx = portfolio.getContext('2d');
-      // Initialize chart using default config set
-      // @ts-ignore
-      var myChart = new Chart(ctx, config);
-    })
+    import Histogram from "./Histogram.svelte";
+    import PieChart from "./PieChart.svelte";
+    import Table from "./Table.svelte";
 </script>
-<canvas bind:this={portfolio} width={400} height={400} />
+
+<article class="prose-lg">
+    <h1>Academics</h1>
+    <h2>Charts</h2>
+
+    <div class="w-full h-full flex flex-col justify-center items-center">
+        <div class="w-1/2 pb-10">
+            <PieChart />
+        </div>
+        <div class="w-3/4 pb-10">
+            <Histogram />
+        </div>
+    </div>
+
+    <h2>Results</h2>
+    A copy of my latest university transcipt can be viewed or downloaded <a
+        href="https://drive.google.com/file/d/1Ec86g-izGvJ9yTrDjQB8XUm_-DKnZcMB/view?usp=sharing"
+        class="link link-primary">here</a
+    >.
+
+    <div class="w-full h-96 overflow-auto m-5">
+        <Table />
+    </div>
+</article>
