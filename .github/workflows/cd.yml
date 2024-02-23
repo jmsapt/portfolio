@@ -1,5 +1,8 @@
 name: Deploy GitHub Pages
 
+env:
+  BUILD_PATH: ./dist
+
 on:
   push:
     branches: [master] # Assuming your main branch is named 'main'
@@ -35,7 +38,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: github-pages
-          path: ./docs/dist
+          path: ./dist
 
           
   deploy:
