@@ -20,6 +20,12 @@ jobs:
           node-version: 20
       - run: npm ci
 
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./build
+          name: github-pages
+
   # Deploy job
   deploy:
     # Add a dependency to the build job
