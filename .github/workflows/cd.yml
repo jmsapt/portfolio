@@ -30,13 +30,13 @@ jobs:
         name: svelte-app
         path: build  # This should match the output directory of your Svelte build
 
-   deploy:
+  deploy:
     needs: build
-
+  
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
+  
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -47,7 +47,7 @@ jobs:
         
       - name: Setup Pages
         uses: actions/configure-pages@v3
-
+  
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
