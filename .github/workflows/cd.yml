@@ -1,33 +1,61 @@
-name: Build and Deploy
-
-env:
-  BUILD_PATH: ./dist
+name: Deploy GitHub Pages
 
 on:
   push:
-    branches:
-      - master
+    branches: [master] # Assuming your main branch is named 'main'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Setup Node.js
+      - name: Install Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "20.11.1"
-
-      - name: Install dependencies
+          node-version: '20.11.1'
+      - name: Install Dependencies
         run: npm install
 
-      - name: Build Svelte app
+      - name: Build Svelte App
         run: npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          name: svelte-build
+          path: ./dist
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: svelte-build
+          path: ./dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: dist # Assuming your Svelte build output directory is 'public'
