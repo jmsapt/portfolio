@@ -35,7 +35,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: github-pages
-          path: ./.svelte-kit/output/
+          path: ./.svelte-kit/output/client
           if-no-files-found: error
 
           
