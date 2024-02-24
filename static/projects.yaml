@@ -1,17 +1,82 @@
+# Required fields are name and description. Other fields are optional.
+# Modified markdown syntax. Valid markdown elements include:
+# - newline seperated paragraphs
+# - links
+# - bold/italics
+
 - name: Portfolio Website
-  description: "This is a test of my element.
-    This should be in the same paragraph.
-    
-    This should be a new paragraph."
+  description: "
+    This is project is was you are viewing *right now*. The primary goal of this project was to learn a frontend web framework and gain some basic
+    design skills. The website was built using the [Svelte Javascript Framework](https://svelte.dev) and hosted on Github Pages.
+
+    It also lets me express my experience in a more complete and aesthetic way then a simple pdf resume.
+    "
   tags: [Javascript, HTML]
   repo: github.com/jmsapt/portfolio
   link: jmsapt.github.io/portfolio
 
 - name: Game of Life
-  description: "This is a test of my element.
-    This should be in the same paragraph.
+  description: "
+    This project was just a small proof of concept web application for working with 
+    Rust code compiled down to web assembly, and interfacing with Javascript.
+    The application itself is a simple implementation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+    where the lifecyle of each cell is governed by 4 simple rules.
     
-    This should be a new paragraph."
+    The simulation is entirely written in Rust, and interfaces with Javascript for rendering on the webpage in one direction, and passing
+    user input from webpage back to the simulation in the other direction. The web assembly binary can interface with the Javascript
+    as the Rust program declares a Foreign Function Interface (FFI) that is provided by Rust. This allows for Javascript to call Rust
+    functions, and even allows memory to be shared between the Javascript and Rust.
+
+    To use the simulation, you can click random to generate a new random grid, click on individual cells to toggle them, toggle between running/paused, and change the simulation's
+    speed using the slider. To reset the universe you can click new blank.
+    "
   tags: [Rust, Javascript, HTML]
   repo: github.com/jmsapt/game-of-life
   link: jmsapt.github.io/game-of-life
+
+
+- name: Computation Fluid Dynamics for the Web
+  description: "
+    This project is my current thesis project for my mechanical engineering honours. The aim is to develop a lightweight 3D Computational Fluid 
+    Dynamics (CFD) fluid simulation program that could be built into web assembly allowing it to be easily distributed via a website. The target audience 
+    for it is highschool to university student, providing them with an easy to use and less computationally intensive program by using 
+    a solver and by only simulating incompressible flow. 
+
+    One of the primary motivations behind this thesis topic was it would give me a reason to learn how to program for
+    the GPU, and how to write compute shaders. Rendering is handled by the Rust game engine [Bevy](https://bevyengine.org).
+
+    Right now it is early days, with my it starting in February and ending in November.
+    "
+  tags: [Rust, Mechanical Engineering]
+  repo: github.com/jmsapt/windtunnel
+
+- name: UNSW Sunswift Racing
+  description: "
+    UNSW's [Sunswift Racing](https://www.challeng.unsw.edu.au/challeng-projects/sunswift-racing) is a student lead engineering project that designs
+    and build solar cars. They have been building solar cars since 1996, with the current car being Sunswift Racing 7 (SR7). I was a member Vechile Dynamics department
+    from August 2022 to September 2023.
+
+    During my time with the team, I helped improve and maintain SR7 in preparation for the 2023 Bridgestone World Solar Challenge in October of 2023, where solar cars race across Australia starting in Darwin 
+    ending in Adelaide. Sunswift Racing finished the event winning our division ([Bridgestone World Solar Challenge Results](https://worldsolarchallenge.org/the-event/history/honour_roll)).
+    The team also managed to set a [new world record](https://www.abc.net.au/news/2022-12-19/solar-powered-car-unsw-sunswift-7/101790478), becoming the fastest electric 
+    car to travel more than 1,000 kilometres on a single charge.
+    "
+  tags: [Mechanical Engineering]
+
+- name: Undergraduate Research Project
+  description: "This is a test of my element.
+    This should be in the same paragraph.
+    
+
+    This should be a new paragraph."
+  tags: [Mechanical Engineering, CPP]
+  repo: github.com/jmsapt/game-of-life
+  link: jmsapt.github.io/game-of-life
+
+
+# - name: Capstone Project
+#   description: "This is a test of my element.
+#     This should be in the same paragraph.
+    
+#     This should be a new paragraph."
+#   tags: [Python, Javascript, HTML]

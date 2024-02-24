@@ -79,7 +79,7 @@
                 <p class="font-medium m-1"><b>Github</b></p>
                 <p class="font-medium m-1"><a
                     href="https://www.github.com/jmsapt/"
-                    class="link link-primary">jmsapt</a
+                    class="link link-primary link-hover">jmsapt</a
                 ></p>
             </div>
         </div>
@@ -100,7 +100,7 @@
                 <p class="font-medium m-1"><b>LinkedIn</b></p>
                 <p class="font-medium m-1"><a
                     href="https://www.linkedin.com/in/james-appleton-929a6b1b0/"
-                    class="link link-primary">James Appleton</a
+                    class="link link-primary link-hover">James Appleton</a
                 ></p>
             </div>
         </div>

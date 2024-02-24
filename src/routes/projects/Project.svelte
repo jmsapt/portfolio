@@ -3,24 +3,43 @@
     export let link: string | null = null;
     export let name: string;
     export let description: string;
-    export let tags: string[];
+    export let tags: string[] = [];
 
-    let paragraphs = description.split("\n");
-    console.log(paragraphs);
+    // Format markdown style links, then split into paragraphs
+    const regex = [
+        /\[([^\[\]]+)\]\(([^)]+)\)/g,   // Markdown links
+        /\*\*(.*?)\*\*/g,               // Bold
+        /\*(.*?)\*/g,                   // Italics
+    ];
+    const replaceTags = [
+        '<a href="$2" class="link link-primary link-hover">$1</a>',
+        '<strong>$1</strong>',
+        '<em>$1</em>'
+    ];
+
+    let content = description;
+    for (let i = 0; i < regex.length; i++) {
+        content = content.replace(regex[i], replaceTags[i]);
+    }
+    let paragraphs = content.split("\n");
 
     let badges = new Map([
         ["rust", "badge-error"],
         ["javascript", "badge-warning"],
         ["html", "badge-accent"],
+        ["python", "badge-secondary"],
+        ["cpp", "badge-info"],
+        ["mechanical engineering", "badge-primary"],
     ]);
 </script>
 
 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 <div
     tabindex="0"
-    class="collapse collapse-arrow border border-base-300 bg-base-200"
+    class="collapse collapse-arrow border border-base-300 bg-base-200 p-2"
+
 >
-    <input type="checkbox" />
+    <input type="checkbox" checked/>
     <div class="collapse-title text-xl font-medium">
         <b>{name}</b>
         {#each tags as tag}
@@ -30,12 +49,9 @@
         {/each}
     </div>
     <div class="collapse-content">
-        <p>
-            {#each paragraphs as text}
-                {text}
-                <br class="mt-4" />
-            {/each}
-        </p>
+        {#each paragraphs as text}
+            <p>{@html text}</p>
+        {/each}
         {#if repo || link}
             <div class="flex-row flex mt-2">
                 {#if repo}

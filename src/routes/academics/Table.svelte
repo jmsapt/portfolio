@@ -6,7 +6,7 @@
     import { onMount } from "svelte";
 </script>
 
-<table class="table table-sm table-pin-rows table-pin-cols">
+<table class="table table-md table-pin-rows table-pin-cols">
     <thead>
         <tr>
             <th></th>

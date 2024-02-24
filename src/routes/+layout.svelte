@@ -13,7 +13,7 @@
 
 <html data-theme="dark" lang="en"></html>
 <div class="items-center justify-center min-h-screen flex-col flex">
-    <div class="w-full flex justify-center items-center bg-base-300">
+    <div class="w-full bg-base-300">
         <Navbar />
     </div>
 
