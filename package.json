@@ -34,6 +34,7 @@
 		"apexcharts": "^3.46.0",
 		"chartjs": "^0.3.24",
 		"grunt": "^1.6.1",
+		"js-yaml": "^4.1.0",
 		"svelte-apex": "^1.1.0",
 		"svelte-apexcharts": "^1.0.2",
 		"svelte-chartjs": "^3.1.5"

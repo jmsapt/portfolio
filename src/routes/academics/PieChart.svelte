@@ -2,7 +2,8 @@
 // @ts-nocheck
 
 import Chart from "./Chart.svelte";
-import transcript from "./transcipt.json";
+import transcript from "./transcript.json";
+
 
 let showCounts = true; // Initially, show counts
 

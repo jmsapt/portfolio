@@ -1,6 +1,8 @@
 <script>
+// @ts-nocheck
+
 // @ts-ignore
-import data from "./transcipt.json";
+import data from "./transcript.json";
 import {
     onMount
 } from "svelte";

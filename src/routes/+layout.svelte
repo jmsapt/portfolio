@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="output.css" />
 </svelte:head>
 
+<html data-theme="dark" lang="en"></html>
 <div class="items-center justify-center min-h-screen flex-col flex">
     <div class="w-full flex justify-center items-center bg-base-300">
         <Navbar />
     </div>
 
     <div class="w-full max-w-screen-lg text-left flex-1 p-5">
-            <slot />
+        <slot />
     </div>
 
     <div class="w-full flex">

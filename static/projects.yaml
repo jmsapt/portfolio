@@ -1,0 +1,17 @@
+- name: Portfolio Website
+  description: "This is a test of my element.
+    This should be in the same paragraph.
+    
+    This should be a new paragraph."
+  tags: [Javascript, HTML]
+  repo: github.com/jmsapt/portfolio
+  link: jmsapt.github.io/portfolio
+
+- name: Game of Life
+  description: "This is a test of my element.
+    This should be in the same paragraph.
+    
+    This should be a new paragraph."
+  tags: [Rust, Javascript, HTML]
+  repo: github.com/jmsapt/game-of-life
+  link: jmsapt.github.io/game-of-life

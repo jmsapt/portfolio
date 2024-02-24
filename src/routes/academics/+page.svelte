@@ -2,6 +2,7 @@
     import Histogram from "./Histogram.svelte";
     import PieChart from "./PieChart.svelte";
     import Table from "./Table.svelte";
+
 </script>
 
 <article class="prose-lg">

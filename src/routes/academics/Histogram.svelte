@@ -5,7 +5,7 @@ export let upper_bound = 100;
 export let lower_bound = 70;
 
 import Chart from "./Chart.svelte";
-import transcript from "./transcipt.json";
+import transcript from "./transcript.json";
 
 const bucket_size = (upper_bound - lower_bound) / num_buckets;
 let showCounts = true; // Initially, show counts
