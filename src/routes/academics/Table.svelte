@@ -1,53 +1,9 @@
 <script>
-// @ts-nocheck
+    // @ts-nocheck
 
-// @ts-ignore
-import data from "./transcript.json";
-import {
-    onMount
-} from "svelte";
-
-// @ts-ignore
-function populateTable() {
-    let table = document.querySelector("table tbody");
-
-    // clear existing rows
     // @ts-ignore
-    table.innerHTML = "";
-
-    let index = 1;
-    data.forEach((row) => {
-        let tablerow = document.createElement("tr");
-
-        // assign index
-        let indexcell = document.createElement("th");
-        indexcell.textContent = index.toString();
-        tablerow.appendChild(indexcell);
-
-        // add data columns
-        let columns = [
-            row.taken.year + "T" + row.taken.term,
-            row.course,
-            row.name,
-            row.mark,
-            row.grade,
-        ];
-        columns.forEach((col) => {
-            let cell = document.createElement("td");
-            cell.textContent = col !== -1 ? col.toString() : "";
-            tablerow.appendChild(cell);
-        });
-
-        // @ts-ignore
-        table.appendChild(tablerow);
-        index += 1;
-    });
-}
-
-// Call populateTable when the DOM content is loaded
-onMount(() => {
-    populateTable();
-})
+    import data from "./transcript.json";
+    import { onMount } from "svelte";
 </script>
 
 <table class="table table-sm table-pin-rows table-pin-cols">
@@ -62,5 +18,15 @@ onMount(() => {
         </tr>
     </thead>
     <tbody>
+        {#each data as { name, course, mark, grade, taken }, i}
+            <tr>
+                <td>{i + 1}</td>
+                <td>{taken.year + "T" + taken.term}</td>
+                <td>{course}</td>
+                <td>{name}</td>
+                <td>{mark > 0 ? mark : ""}</td>
+                <td>{grade}</td>
+            </tr>
+        {/each}
     </tbody>
 </table>

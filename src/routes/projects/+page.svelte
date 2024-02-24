@@ -15,13 +15,16 @@
             console.error("Error loading YAML file:", error);
         }
 
-        console.log(projects)
+        console.log(projects);
     });
-
 </script>
 
-{#each projects as { name, description, repo, link, tags }}
-    <div class="p-1">
-        <Project {name} {description} {repo} {link} {tags}/>
-    </div>
-{/each}
+<article class="prose-lg">
+    <h1>Projects</h1>
+
+    {#each projects as { name, description, repo, link, tags }}
+        <div class="p-1">
+            <Project {name} {description} {repo} {link} {tags} />
+        </div>
+    {/each}
+</article>

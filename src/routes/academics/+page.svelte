@@ -2,6 +2,7 @@
     import Histogram from "./Histogram.svelte";
     import PieChart from "./PieChart.svelte";
     import Table from "./Table.svelte";
+    import TermWam from "./TermWam.svelte";
 
 </script>
 
@@ -15,6 +16,9 @@
         </div>
         <div class="w-3/4 pb-10">
             <Histogram />
+        </div>
+        <div class="w-3/4 pb-10">
+            <TermWam />
         </div>
     </div>
 
