@@ -1,5 +1,3 @@
-
-
 <article class="prose-lg">
     <h1>Contact</h1>
     <div class="p-10">
@@ -77,13 +75,38 @@
             </svg>
             <div>
                 <p class="font-medium m-1"><b>Github</b></p>
-                <p class="font-medium m-1"><a
-                    href="https://www.github.com/jmsapt/"
-                    class="link link-primary link-hover">jmsapt</a
-                ></p>
+                <p class="font-medium m-1">
+                    <a
+                        href="https://www.github.com/jmsapt/"
+                        class="link link-primary link-hover">jmsapt</a
+                    >
+                </p>
             </div>
         </div>
-
+        <!-- Stackoverflow -->
+        <div class="flex items-center mb-3">
+            <svg
+                class="w-12 h-12 m-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 104 124"
+                ><path
+                    fill="#F58025"
+                    d="M22.9878906,76.73 L77.0128906,88.085 L79.2838906,77.285 L25.2588906,65.925 L22.9878906,76.73 Z M30.1368906,50.861 L80.1828906,74.169 L84.8448906,64.16 L34.7978906,40.852 L30.1368906,50.861 Z M43.9848906,26.308 L86.4128906,61.639 L93.4788906,53.154 L51.0508906,17.824 L43.9848906,26.308 Z M71.3718906,0.192 L62.5118906,6.782 L95.4598906,51.082 L104.319891,44.493 L71.3718906,0.192 Z M22,102 L77,102 L77,91 L22,91 L22,102 Z"
+                /><polygon
+                    fill="#BBBBBB"
+                    points="88 80 99 80 99 124 0 124 0 80 11 80 11 113 88 113"
+                /></svg
+            >
+            <div>
+                <p class="font-medium m-1"><b>Stack Overflow</b></p>
+                <p class="font-medium m-1">
+                    <a
+                        href="https://stackoverflow.com/users/18549173"
+                        class="link link-primary link-hover">jmsapt</a
+                    >
+                </p>
+            </div>
+        </div>
         <!-- LinkedIn -->
         <div class="flex items-center mb-3">
             <svg
@@ -98,10 +121,12 @@
             >
             <div>
                 <p class="font-medium m-1"><b>LinkedIn</b></p>
-                <p class="font-medium m-1"><a
-                    href="https://www.linkedin.com/in/james-appleton-929a6b1b0/"
-                    class="link link-primary link-hover">James Appleton</a
-                ></p>
+                <p class="font-medium m-1">
+                    <a
+                        href="https://www.linkedin.com/in/james-appleton-929a6b1b0/"
+                        class="link link-primary link-hover">James Appleton</a
+                    >
+                </p>
             </div>
         </div>
     </div>

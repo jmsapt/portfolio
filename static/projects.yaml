@@ -64,14 +64,21 @@
   tags: [Mechanical Engineering]
 
 - name: Undergraduate Research Project
-  description: "This is a test of my element.
-    This should be in the same paragraph.
+  description: "
+    At the end of my third year (December 2022), I undertook a supervised research project titled \"Use of
+    Higher-Order Estimators in Initial Orbit Determination\" which focussed on orbital computer simulations
+    written in C++. What this project entailed was comparing how effectively (both accuracy and computing
+    time) different variation of Kalman filters model orbits only given error prone measurements.
     
-
-    This should be a new paragraph."
+    The context for this research is measuring and modelling space junk which may only be observed for short periods as
+    while they remain visible, allowing smaller errors in their initial orbit to propagate whilst they cannot be
+    observed.
+    
+    This project was a part of UNSW's Taste of Research Program, and as such I was awarded a
+    Taste of Research scholarship to conduct this project.
+    "
   tags: [Mechanical Engineering, CPP]
-  repo: github.com/jmsapt/game-of-life
-  link: jmsapt.github.io/game-of-life
+  repo: github.com/jmsapt/ordDetHOUSE
 
 
 # - name: Capstone Project
@@ -80,3 +87,4 @@
     
 #     This should be a new paragraph."
 #   tags: [Python, Javascript, HTML]
+ 
