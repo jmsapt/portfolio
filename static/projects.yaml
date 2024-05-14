@@ -4,6 +4,21 @@
 # - links
 # - bold/italics
 
+- name: Flaq - CLI metadata tool
+  description: "
+    This was a simple but powerful command line tool for organising `.flac` audio files based on their metadata tags. Most notably this tool has its own 
+    query langauge with can be used to write simple or very complex nested queries to better organise media files.
+
+    This project also allowed me to learn how software is package for Arch Linux, as I ended up publishing to the [Arch Linux AUR](aur.archlinux.org/packages/flaq) and
+    to [Rust's \"crates.io\" repository](https://crates.io/crates/flaq).
+
+    Right now, the project is sitting at over 500 downloads on crates.io, and hopefully this number will keep climbing as more people discover this tool.
+    "
+  tags: [Rust]
+  repo: github.com/jmsapt/flaq
+  link: aur.archlinux.org/packages/flaq
+  link: https://crates.io/crates/flaq
+
 - name: Portfolio Website
   description: "
     This is project is was you are viewing *right now*. The primary goal of this project was to learn a frontend web framework and gain some basic
