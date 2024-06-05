@@ -8,7 +8,7 @@
 
     import data from "./transcript.json"
 
-    const WAM = 85.645;
+    const WAM = 85.515;
     
 </script>
 
@@ -38,7 +38,7 @@
     <br class="mb-2">
     A copy of my latest university transcipt can be viewed or downloaded
     <a
-        href="https://drive.google.com/file/d/1Ec86g-izGvJ9yTrDjQB8XUm_-DKnZcMB/view?usp=sharing"
+        href="https://1drv.ms/b/s!ArXFBdS2HrVTgZo7NcxHGd07LAARNA?e=nUE0a4"
         class="link link-primary link-hover">here</a
     >.
 
